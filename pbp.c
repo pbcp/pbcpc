@@ -28,7 +28,7 @@ int main (int argc, char* argv[]) {
 	strcat(server_path, "/.config/pbcp/server");
 	f = fopen(server_path, "r");
 	if (f == NULL) {
-		strcpy(url, "http://23.227.187.40:9000/board/");
+		strcpy(url, "https://api.pbcp.io/board/");
 	} else {
 		fscanf(f, "%s", url);
 		fclose(f);
